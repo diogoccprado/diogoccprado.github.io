@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diogo Prado — Robotics Research</title>
+  <meta name="description" content="Undergraduate robotics researcher: ROS 2, SLAM, semantic mapping, perception, control, and robot learning.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Diogo Prado</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/diogoccprado" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-label">Robotics · Perception · Control</p>
+      <h1>Building robots that perceive, navigate, and act.</h1>
+      <p class="hero-lead">
+        Undergraduate robotics researcher working on ROS 2, SLAM, semantic mapping,
+        robot perception, control, and robot learning — on real hardware and in simulation.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p class="section-intro">
+        Current work spans semantic mapping, multi-sensor odometry fusion, and perception
+        infrastructure for mobile robots.
+      </p>
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-tag">In progress</span>
+          <h3>ARGUS / Semantic Mapping Navigation</h3>
+          <p>Semantic mapping and navigation research integrating LiDAR, camera, and scene understanding for mobile robot perception.</p>
+          <p class="card-meta"><!-- TODO: add repo link when public --></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Active development</span>
+          <h3>Adaptive Odometry Filter</h3>
+          <p>ROS 2 adaptive EKF fusing wheel odometry, IMU, LiDAR odometry, and optional visual odometry. Repo cleanup and public fork pending.</p>
+          <p class="card-meta"><!-- TODO: add repo link --></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <h3 class="category-label">Robotics Systems</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="https://github.com/diogoccprado/hovercraft_prj">Real Hovercraft Control System</a></h3>
+          <p>Physical hovercraft robot with ESP32 firmware, MPU6050 IMU, host-side EKF and vision, MQTT communication, and closed-loop trajectory control.</p>
+          <p class="card-tools">ESP-IDF · C++ · OpenCV · MQTT · ESP32</p>
+          <!-- TODO: add hovercraft photo -->
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/diogoccprado/Robocup-Work-2024">RoboCup@Work Robot Software</a></h3>
+          <p>Autobotz UFMG competition stack: ROS navigation, RealSense/T265 perception, AprilTag manipulation, and SCARA pick-and-place for RoboCup@Work arena tasks.</p>
+          <p class="card-tools">ROS · C++ · Python · RealSense · AprilTag</p>
+          <!-- TODO: add competition photo/video -->
+        </article>
+      </div>
+
+      <h3 class="category-label">Perception / Calibration</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="https://github.com/diogoccprado/LiDAR---Camera-Calibration---Annotations-and-Fixes-">LiDAR-Camera Calibration (ROS 2)</a></h3>
+          <p>Extrinsic calibration workflow for Livox Mid-360 + RealSense D435 using rosbag2, SAM masks, and CalibAnything — with documented fixes for a semantic mapping pipeline.</p>
+          <p class="card-tools">ROS 2 · Livox · RealSense · SAM · CalibAnything</p>
+        </article>
+      </div>
+
+      <h3 class="category-label">Simulation / Robot Learning</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="https://github.com/diogoccprado/genesis-go2-sim">Genesis Go2 ROS 2 Bridge</a></h3>
+          <p>Physics-based Unitree Go2 simulation exposing a joint-level ROS 2 interface for MPC, whole-body control, or RL policy development.</p>
+          <p class="card-tools">Genesis · ROS 2 · Python · Legged locomotion</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="coursework" class="section">
+      <h2>Coursework</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Mathematical Introduction to Generative AI</h3>
+          <p>Final assignment on generative models. <!-- TODO: add link when repo is public --></p>
+        </article>
+        <article class="card">
+          <h3>Robot Learning</h3>
+          <p>Exercises and assignments in robot learning. <!-- TODO: add when cleaned --></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>GitHub:</strong> <a href="https://github.com/diogoccprado">github.com/diogoccprado</a></li>
+        <li><strong>Portfolio:</strong> <a href="https://diogoccprado.github.io">diogoccprado.github.io</a></li>
+        <li><strong>LinkedIn:</strong> <!-- TODO: add URL --></li>
+        <li><strong>Email:</strong> <!-- TODO: add email --></li>
+        <li><strong>CV:</strong> <!-- TODO: add PDF link --></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Diogo Prado · <a href="https://github.com/diogoccprado">GitHub</a></p>
+  </footer>
+</body>
+</html>
