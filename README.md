@@ -1,56 +1,91 @@
 # diogoccprado.github.io
 
-Personal robotics portfolio site, deployed via [GitHub Pages](https://pages.github.com/).
+Static personal portfolio for Diogo Prado, focused on robotics software, perception,
+localization, mapping, control, and robot learning.
+
+The public site target is:
+
+```text
+https://diogoccprado.github.io
+```
 
 ## Structure
 
-```
+```text
 diogoccprado.github.io/
-├── index.html                              # Main portfolio page
-├── styles.css                              # Site styles
-├── README.md                               # This file
-└── GITHUB_PROFILE_PORTFOLIO_CHECKLIST.md   # Portfolio setup checklist
+├── index.html
+├── styles.css
+├── assets/
+│   └── README.md
+├── README.md
+└── GITHUB_PROFILE_PORTFOLIO_CHECKLIST.md
 ```
 
-## Edit
+## Run Locally
 
-1. Update project cards in `index.html` as repos are renamed or new media is added.
-2. Fill in TODO placeholders: LinkedIn, email, CV, coursework links, project images.
-3. Keep copy conservative — no invented metrics or claims.
+Because this site has no build step, you can open `index.html` directly in a
+browser.
 
-## Deploy
-
-### First-time setup
-
-```bash
-cd ~/diogoccprado.github.io
-git init
-git add .
-git commit -m "Initial portfolio site scaffold"
-git branch -M main
-git remote add origin git@github.com:diogoccprado/diogoccprado.github.io.git
-git push -u origin main
-```
-
-GitHub Pages serves `index.html` from the `main` branch automatically for a repo named `username.github.io`.
-
-### Updates
-
-```bash
-git add index.html styles.css
-git commit -m "Update portfolio content"
-git push
-```
-
-## Local preview
+For a local server preview:
 
 ```bash
 cd ~/diogoccprado.github.io
 python3 -m http.server 8080
-# Open http://localhost:8080
 ```
 
-## Related repos
+Then open:
 
-- Profile README: `~/diogoccprado`
-- Project repos: see `GITHUB_PROFILE_PORTFOLIO_CHECKLIST.md`
+```text
+http://localhost:8080
+```
+
+## Edit Content
+
+- Update text, links, publications, and project cards in `index.html`.
+- Update colors, spacing, typography, grids, and placeholders in `styles.css`.
+- Keep claims conservative and avoid adding metrics, awards, or affiliations unless
+  they are documented.
+- Keep repository links explicit so they are easy to audit later.
+
+## Add Images
+
+Place images in `assets/`. The CSS already looks for these filenames:
+
+- `assets/profile.jpg`
+- `assets/argus-preview.jpg`
+- `assets/hovercraft-preview.jpg`
+- `assets/robocup-preview.jpg`
+- `assets/lidar-calibration-preview.jpg`
+- `assets/go2-preview.jpg`
+- `assets/aerial-mapping-preview.jpg`
+- `assets/genai-preview.jpg`
+
+If an image is missing, the page shows a dark blue placeholder instead of a broken
+image icon.
+
+## Deploy
+
+GitHub Pages serves `index.html` from the root of the `main` branch for a repository
+named `diogoccprado.github.io`.
+
+To publish updates:
+
+```bash
+cd ~/diogoccprado.github.io
+git status
+git add index.html styles.css README.md assets/README.md
+git commit -m "Redesign robotics portfolio site"
+git push
+```
+
+Do not push until the page has been reviewed locally.
+
+## TODOs
+
+- Add real profile photo at `assets/profile.jpg`.
+- Add project screenshots and robot photos in `assets/`.
+- Add LinkedIn URL.
+- Add contact email or obfuscated email.
+- Add CV / resume PDF, for example `assets/Diogo-Prado-CV.pdf`.
+- Replace TODO project page, paper, notes, and private repo links as they become
+  public.

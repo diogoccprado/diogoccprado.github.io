@@ -3,126 +3,465 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diogo Prado — Robotics Research</title>
-  <meta name="description" content="Undergraduate robotics researcher: ROS 2, SLAM, semantic mapping, perception, control, and robot learning.">
+  <title>Diogo Prado | Robotics & AI</title>
+  <meta name="description" content="Diogo Prado is an undergraduate robotics researcher at UFMG working on ROS 2, SLAM, localization, semantic mapping, perception, control, and robot learning.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav-brand">Diogo Prado</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#top" class="nav-brand">Diogo Prado</a>
       <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#coursework">Coursework</a>
         <a href="#contact">Contact</a>
-        <a href="https://github.com/diogoccprado" target="_blank" rel="noopener">GitHub</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="hero-label">Robotics · Perception · Control</p>
-      <h1>Building robots that perceive, navigate, and act.</h1>
-      <p class="hero-lead">
-        Undergraduate robotics researcher working on ROS 2, SLAM, semantic mapping,
-        robot perception, control, and robot learning — on real hardware and in simulation.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="#contact" class="btn btn-secondary">Contact</a>
+  <main id="top">
+    <section id="about" class="hero section-anchor">
+      <div class="hero-copy">
+        <p class="eyebrow">Robotics software · Perception · Localization</p>
+        <h1>Diogo Prado</h1>
+        <p class="hero-role">Undergraduate robotics researcher at UFMG.</p>
+        <p class="hero-lead">
+          Undergraduate robotics researcher working on ROS 2, SLAM, localization,
+          semantic mapping, robot perception, control, and real robot systems.
+        </p>
+        <div class="hero-actions" aria-label="Primary links">
+          <a class="btn btn-primary" href="https://github.com/diogoccprado" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-secondary" href="#contact">LinkedIn TODO</a>
+          <a class="btn btn-secondary" href="#contact">CV / Resume TODO</a>
+          <a class="btn btn-secondary" href="#contact">Email TODO</a>
+        </div>
+      </div>
+
+      <div class="portrait-card" aria-label="Profile photo placeholder">
+        <!-- Replace by adding a real image at assets/profile.jpg. The CSS keeps this placeholder readable if the file is missing. -->
+        <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder for Diogo Prado">
+          <span>Profile photo pending</span>
+        </div>
       </div>
     </section>
 
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p class="section-intro">
-        Current work spans semantic mapping, multi-sensor odometry fusion, and perception
-        infrastructure for mobile robots.
-      </p>
-      <div class="card-grid">
-        <article class="card">
-          <span class="card-tag">In progress</span>
-          <h3>ARGUS / Semantic Mapping Navigation</h3>
-          <p>Semantic mapping and navigation research integrating LiDAR, camera, and scene understanding for mobile robot perception.</p>
-          <p class="card-meta"><!-- TODO: add repo link when public --></p>
-        </article>
-        <article class="card">
-          <span class="card-tag">Active development</span>
-          <h3>Adaptive Odometry Filter</h3>
-          <p>ROS 2 adaptive EKF fusing wheel odometry, IMU, LiDAR odometry, and optional visual odometry. Repo cleanup and public fork pending.</p>
-          <p class="card-meta"><!-- TODO: add repo link --></p>
-        </article>
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Highlights</p>
+        <h2 id="highlights-title">Recent Work</h2>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <h3 class="category-label">Robotics Systems</h3>
-      <div class="card-grid">
-        <article class="card">
-          <h3><a href="https://github.com/diogoccprado/hovercraft_prj">Real Hovercraft Control System</a></h3>
-          <p>Physical hovercraft robot with ESP32 firmware, MPU6050 IMU, host-side EKF and vision, MQTT communication, and closed-loop trajectory control.</p>
-          <p class="card-tools">ESP-IDF · C++ · OpenCV · MQTT · ESP32</p>
-          <!-- TODO: add hovercraft photo -->
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/diogoccprado/Robocup-Work-2024">RoboCup@Work Robot Software</a></h3>
-          <p>Autobotz UFMG competition stack: ROS navigation, RealSense/T265 perception, AprilTag manipulation, and SCARA pick-and-place for RoboCup@Work arena tasks.</p>
-          <p class="card-tools">ROS · C++ · Python · RealSense · AprilTag</p>
-          <!-- TODO: add competition photo/video -->
-        </article>
-      </div>
-
-      <h3 class="category-label">Perception / Calibration</h3>
-      <div class="card-grid">
-        <article class="card">
-          <h3><a href="https://github.com/diogoccprado/LiDAR---Camera-Calibration---Annotations-and-Fixes-">LiDAR-Camera Calibration (ROS 2)</a></h3>
-          <p>Extrinsic calibration workflow for Livox Mid-360 + RealSense D435 using rosbag2, SAM masks, and CalibAnything — with documented fixes for a semantic mapping pipeline.</p>
-          <p class="card-tools">ROS 2 · Livox · RealSense · SAM · CalibAnything</p>
-        </article>
-      </div>
-
-      <h3 class="category-label">Simulation / Robot Learning</h3>
-      <div class="card-grid">
-        <article class="card">
-          <h3><a href="https://github.com/diogoccprado/genesis-go2-sim">Genesis Go2 ROS 2 Bridge</a></h3>
-          <p>Physics-based Unitree Go2 simulation exposing a joint-level ROS 2 interface for MPC, whole-body control, or RL policy development.</p>
-          <p class="card-tools">Genesis · ROS 2 · Python · Legged locomotion</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="coursework" class="section">
-      <h2>Coursework</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Mathematical Introduction to Generative AI</h3>
-          <p>Final assignment on generative models. <!-- TODO: add link when repo is public --></p>
-        </article>
-        <article class="card">
-          <h3>Robot Learning</h3>
-          <p>Exercises and assignments in robot learning. <!-- TODO: add when cleaned --></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li><strong>GitHub:</strong> <a href="https://github.com/diogoccprado">github.com/diogoccprado</a></li>
-        <li><strong>Portfolio:</strong> <a href="https://diogoccprado.github.io">diogoccprado.github.io</a></li>
-        <li><strong>LinkedIn:</strong> <!-- TODO: add URL --></li>
-        <li><strong>Email:</strong> <!-- TODO: add email --></li>
-        <li><strong>CV:</strong> <!-- TODO: add PDF link --></li>
+      <ul class="timeline">
+        <li><strong>2026</strong> Working on ARGUS / Semantic Mapping Navigation.</li>
+        <li><strong>2025</strong> Published "Navigation System for a Service Robot for RoboCup@Work" at CROS.</li>
+        <li><strong>2025</strong> Co-authored "Autonomous Mapping and Navigation Unit for Aerial Robots" at ICAR; responsible mainly for localization and mapping / FAST-LIO2-related work.</li>
       </ul>
+    </section>
+
+    <section id="publications" class="section section-anchor">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Research</p>
+        <h2>Publications</h2>
+        <p>
+          Peer-reviewed work connected to service robot navigation and aerial robot
+          mapping/localization.
+        </p>
+      </div>
+
+      <div class="publication-list">
+        <article class="publication-card">
+          <div class="card-header">
+            <span class="status-tag">CROS 2025</span>
+            <span class="related-tag">Related: RoboCup@Work</span>
+          </div>
+          <h3>Navigation System for a Service Robot for RoboCup@Work</h3>
+          <p class="citation">
+            D. Prado et al., "Navigation System for a Service Robot for RoboCup@Work,"
+            2025 Brazilian Conference on Robotics (CROS), Belo Horizonte, Brazil,
+            2025, pp. 1-6, doi: 10.1109/CROS66186.2025.11064857.
+          </p>
+          <p class="role-line">
+            <strong>My role:</strong> Connected to my Autobotz / RoboCup@Work team work
+            on a service robot autonomous navigation system.
+          </p>
+          <div class="tag-list" aria-label="Publication keywords">
+            <span>Location awareness</span>
+            <span>Systematics</span>
+            <span>Laser radar</span>
+            <span>Navigation</span>
+            <span>Service robots</span>
+            <span>Robot vision systems</span>
+            <span>Manipulators</span>
+            <span>Cameras</span>
+            <span>Autonomous robots</span>
+            <span>Testing</span>
+            <span>RoboCup@Work</span>
+            <span>SCARA Manipulator</span>
+            <span>Omnidirectional Mobile Base</span>
+          </div>
+          <div class="card-actions">
+            <a class="text-btn" href="https://doi.org/10.1109/CROS66186.2025.11064857" target="_blank" rel="noopener">DOI</a>
+            <a class="text-btn" href="#robocup-work">Related project</a>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="card-header">
+            <span class="status-tag">ICAR 2025</span>
+            <span class="related-tag">Related: Aerial Mapping</span>
+          </div>
+          <h3>Autonomous Mapping and Navigation Unit for Aerial Robots</h3>
+          <p class="citation">
+            J. Baião et al., "Autonomous Mapping and Navigation Unit for Aerial Robots,"
+            2025 IEEE International Conference on Advanced Robotics (ICAR), San Juan,
+            Argentina, 2025, pp. 502-508, doi: 10.1109/ICAR65334.2025.11338655.
+          </p>
+          <p class="role-line">
+            <strong>My role:</strong> Mainly responsible for localization and mapping,
+            especially FAST-LIO2 and related integration/validation work.
+          </p>
+          <div class="tag-list" aria-label="Publication keywords">
+            <span>Location awareness</span>
+            <span>Point cloud compression</span>
+            <span>SLAM</span>
+            <span>Laser radar</span>
+            <span>Navigation</span>
+            <span>Pipelines</span>
+            <span>Cameras</span>
+            <span>Hardware</span>
+            <span>Sensors</span>
+            <span>Splines</span>
+          </div>
+          <div class="card-actions">
+            <a class="text-btn" href="https://doi.org/10.1109/ICAR65334.2025.11338655" target="_blank" rel="noopener">DOI</a>
+            <a class="text-btn" href="#aerial-mapping">Related project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section section-anchor">
+      <div class="section-heading">
+        <p class="eyebrow">Research Projects</p>
+        <h2>Current and Published Research</h2>
+        <p>
+          Detailed work spanning semantic mapping, autonomous navigation, and
+          multi-sensor localization.
+        </p>
+      </div>
+
+      <div class="research-list">
+        <article class="project-card project-card-wide">
+          <div class="media-placeholder media-argus" role="img" aria-label="Semantic map or RViz screenshot pending">
+            <span>Semantic map / RViz screenshot pending</span>
+          </div>
+          <div class="project-body">
+            <div class="card-header">
+              <span class="status-tag">In progress</span>
+              <span class="related-tag">Active research</span>
+            </div>
+            <h3>ARGUS / Semantic Mapping Navigation</h3>
+            <p>
+              Open-vocabulary semantic mapping and query-to-goal navigation for
+              mobile robots, combining ROS 2, 3D mapping, LiDAR/camera data, dense
+              descriptors, object memory, and semantic retrieval.
+            </p>
+            <div class="tag-list">
+              <span>ROS 2</span>
+              <span>Python</span>
+              <span>C++</span>
+              <span>SLAM</span>
+              <span>Semantic mapping</span>
+              <span>CLIP</span>
+              <span>DINO</span>
+              <span>SAM/SAM2</span>
+              <span>LiDAR</span>
+              <span>RGB-D</span>
+              <span>Gazebo/Genesis</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn muted" href="#contact">Paper / project page TODO</a>
+              <a class="text-btn muted" href="#contact">Repo TODO / private</a>
+              <a class="text-btn muted" href="#contact">Notes TODO</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="aerial-mapping" class="project-card project-card-wide section-anchor">
+          <div class="media-placeholder media-aerial" role="img" aria-label="Aerial mapping media pending">
+            <span>Aerial mapping media pending</span>
+          </div>
+          <div class="project-body">
+            <div class="card-header">
+              <span class="status-tag">Published at ICAR 2025</span>
+              <span class="related-tag">Publication linked above</span>
+            </div>
+            <h3>Autonomous Mapping and Navigation Unit for Aerial Robots</h3>
+            <p>
+              Autonomous mapping and navigation stack for aerial robots. My main
+              responsibility: localization and mapping, especially FAST-LIO2 and
+              related integration/validation.
+            </p>
+            <div class="tag-list">
+              <span>FAST-LIO2</span>
+              <span>SLAM</span>
+              <span>LiDAR</span>
+              <span>Mapping</span>
+              <span>Aerial robots</span>
+              <span>Localization</span>
+              <span>ROS</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn" href="https://doi.org/10.1109/ICAR65334.2025.11338655" target="_blank" rel="noopener">Publication DOI</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card-wide">
+          <div class="media-placeholder media-odometry" role="img" aria-label="Localization plots pending">
+            <span>Localization plots pending</span>
+          </div>
+          <div class="project-body">
+            <div class="card-header">
+              <span class="status-tag">Active development</span>
+              <span class="related-tag">Future cleaned repo</span>
+            </div>
+            <h3>Adaptive Odometry Filter</h3>
+            <p>
+              Adaptive odometry fusion work for mobile robots using LiDAR odometry,
+              wheel odometry, and IMU data, with focus on robust localization in
+              low-feature environments.
+            </p>
+            <div class="tag-list">
+              <span>ROS 2</span>
+              <span>EKF</span>
+              <span>Sensor fusion</span>
+              <span>LiDAR odometry</span>
+              <span>Wheel odometry</span>
+              <span>IMU</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn muted" href="#contact">Repo TODO / active development</a>
+              <a class="text-btn muted" href="#contact">Paper TODO</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-anchor">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Robotics Systems</h2>
+        <p>Software and control work for real and competition robot systems.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="media-placeholder media-hovercraft" role="img" aria-label="Hovercraft photo pending">
+            <span>Hovercraft photo pending</span>
+          </div>
+          <div class="project-body">
+            <h3>Real Hovercraft Control System</h3>
+            <p>
+              Control and software stack for a real hovercraft robot, including
+              embedded firmware, host-side tools, trajectory/control logic, logging,
+              and visualization.
+            </p>
+            <div class="tag-list">
+              <span>Real robot</span>
+              <span>Embedded systems</span>
+              <span>Control</span>
+              <span>ESP32</span>
+              <span>MQTT</span>
+              <span>Python</span>
+              <span>C++</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn" href="https://github.com/diogoccprado/hovercraft-robot-control" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="robocup-work" class="project-card section-anchor">
+          <div class="media-placeholder media-robocup" role="img" aria-label="RoboCup demo media pending">
+            <span>RoboCup demo media pending</span>
+          </div>
+          <div class="project-body">
+            <h3>RoboCup@Work Robot Software</h3>
+            <p>
+              Robot software stack for RoboCup@Work / Autobotz UFMG experiments,
+              including ROS/C++/Python packages, launch files, Docker setup, and
+              simulation assets.
+            </p>
+            <p class="related-work">
+              Related publication: D. Prado et al., "Navigation System for a Service
+              Robot for RoboCup@Work," CROS 2025.
+            </p>
+            <div class="tag-list">
+              <span>RoboCup@Work</span>
+              <span>ROS</span>
+              <span>Navigation</span>
+              <span>Service robots</span>
+              <span>Autonomous navigation</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn" href="https://github.com/diogoccprado/robocup-work-robot-software-2024" target="_blank" rel="noopener">Repo</a>
+              <a class="text-btn" href="https://doi.org/10.1109/CROS66186.2025.11064857" target="_blank" rel="noopener">Publication DOI</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="perception" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Perception & Calibration</p>
+        <h2>Sensor Workflows</h2>
+        <p>Calibration and perception tooling for robotics data collection.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="media-placeholder media-calibration" role="img" aria-label="Calibration alignment screenshot pending">
+            <span>Calibration alignment screenshot pending</span>
+          </div>
+          <div class="project-body">
+            <h3>LiDAR-Camera Calibration Workflow for ROS 2</h3>
+            <p>
+              ROS 2 workflow for LiDAR-camera extrinsic calibration using Livox
+              Mid-360, RealSense D435, rosbag2, SAM masks, and CalibAnything.
+            </p>
+            <div class="tag-list">
+              <span>ROS 2</span>
+              <span>LiDAR</span>
+              <span>Camera calibration</span>
+              <span>Livox</span>
+              <span>RealSense</span>
+              <span>SAM</span>
+              <span>CalibAnything</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn" href="https://github.com/diogoccprado/lidar-camera-calibration-ros2" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="simulation" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Simulation & Robot Learning</p>
+        <h2>Simulation Infrastructure</h2>
+        <p>Tools for testing control and learning ideas before deploying to robots.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="media-placeholder media-go2" role="img" aria-label="Go2 simulation screenshot pending">
+            <span>Go2 simulation screenshot pending</span>
+          </div>
+          <div class="project-body">
+            <h3>Genesis Go2 ROS 2 Bridge</h3>
+            <p>
+              Physics-based Unitree Go2 Genesis simulation with joint-level ROS 2
+              interface for MPC, WBC, and RL control development.
+            </p>
+            <div class="tag-list">
+              <span>ROS 2</span>
+              <span>Genesis</span>
+              <span>Quadruped</span>
+              <span>MPC</span>
+              <span>WBC</span>
+              <span>Robot learning</span>
+              <span>Simulation</span>
+            </div>
+            <div class="card-actions">
+              <a class="text-btn" href="https://github.com/diogoccprado/genesis-go2-sim" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="coursework" class="section section-anchor">
+      <div class="section-heading">
+        <p class="eyebrow">Coursework / Studies</p>
+        <h2>Learning Notes</h2>
+        <p>Smaller study projects and notes being cleaned for publication.</p>
+      </div>
+
+      <div class="small-card-grid">
+        <article class="study-card">
+          <div class="media-placeholder small media-genai" role="img" aria-label="GenAI results pending">
+            <span>GenAI results pending</span>
+          </div>
+          <div class="project-body">
+            <span class="status-tag">Coming soon</span>
+            <h3>Mathematical Introduction to Generative AI — Final Assignment</h3>
+            <p>
+              Course final assignment involving generative modeling; planned to be
+              cleaned and published as a reproducible project with report,
+              notebooks, and results.
+            </p>
+            <div class="tag-list">
+              <span>Generative AI</span>
+              <span>Diffusion/flow</span>
+              <span>VAE</span>
+              <span>EMNIST</span>
+              <span>PyTorch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="study-card">
+          <div class="media-placeholder small media-notes" role="img" aria-label="Robot learning notes pending">
+            <span>Notes pending</span>
+          </div>
+          <div class="project-body">
+            <span class="status-tag">In progress</span>
+            <h3>Robot Learning Notes and Exercises</h3>
+            <p>
+              Structured notes and exercises while studying model learning, control,
+              MPC constraints, RL, and robot learning for legged/mobile robots.
+            </p>
+            <div class="tag-list">
+              <span>Robot learning</span>
+              <span>Model learning</span>
+              <span>MPC</span>
+              <span>RL</span>
+              <span>Control</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-anchor">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Links and CV</h2>
+        <p>
+          I am interested in robotics/AI research collaborations, strong engineering
+          teams, and graduate or research opportunities.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <a href="https://github.com/diogoccprado" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://diogoccprado.github.io" target="_blank" rel="noopener">Website</a>
+        <span>LinkedIn TODO: add public profile URL</span>
+        <span>Email TODO: add contact email or obfuscated address</span>
+        <span>CV TODO: add PDF, for example assets/Diogo-Prado-CV.pdf</span>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Diogo Prado · <a href="https://github.com/diogoccprado">GitHub</a></p>
+    <p>&copy; 2026 Diogo Prado. Built as a static GitHub Pages site.</p>
+    <p><a href="https://github.com/diogoccprado" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 </body>
 </html>
