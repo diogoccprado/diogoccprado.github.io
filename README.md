@@ -49,7 +49,16 @@ http://localhost:8080
 
 ## Add Images
 
-Place images in `assets/`. The CSS already looks for these filenames:
+Each media slot currently shows a plain gray placeholder box with a small caption.
+To add a real image, place the file in `assets/` and replace the matching
+`<div class="media-box">` (or `<div class="portrait-box">`) in `index.html` with an
+`<img>`, for example:
+
+```html
+<img src="assets/profile.jpg" alt="Diogo Prado" width="150">
+```
+
+Suggested filenames:
 
 - `assets/profile.jpg`
 - `assets/argus-preview.jpg`
@@ -60,8 +69,7 @@ Place images in `assets/`. The CSS already looks for these filenames:
 - `assets/aerial-mapping-preview.jpg`
 - `assets/genai-preview.jpg`
 
-If an image is missing, the page shows a dark blue placeholder instead of a broken
-image icon.
+Until an image is added, the placeholder box and its caption remain visible.
 
 ## Deploy
 
