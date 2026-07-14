@@ -218,16 +218,22 @@
         <article id="perception" class="card">
           <h3>LiDAR-Camera Calibration Workflow for ROS 2</h3>
           <p>
-            ROS 2 workflow for LiDAR-camera extrinsic calibration using Livox
-            Mid-360, RealSense D435, rosbag2, SAM masks, and CalibAnything.
+            Calibrated the Velodyne LiDAR and RealSense D435i RGB camera on
+            Espeleo from synchronized ROS 2 bag data, with a reusable
+            camera-optical to FAST-LIO2 IMU-frame workflow.
           </p>
-          <p class="tools"><span class="label">Tools.</span> ROS 2, LiDAR, camera calibration, Livox, RealSense, SAM, CalibAnything.</p>
+          <p class="tools"><span class="label">Tools.</span> ROS 2 Jazzy, Velodyne, RealSense D435i, SAM2, CalibAnything, OpenCV, FAST-LIO2.</p>
           <figure class="media">
-            <div class="media-box" role="img" aria-label="Calibration alignment screenshot pending"></div>
-            <figcaption>Calibration alignment screenshot pending</figcaption>
+            <img
+              src="assets/lidar-calibration-preview.png"
+              alt="Initial and refined Velodyne LiDAR projections over the RealSense RGB image"
+              loading="lazy"
+            >
+            <figcaption>Initial vs. refined LiDAR-camera projection with CalibAnything</figcaption>
           </figure>
           <p class="entry-links">
             <a href="https://github.com/diogoccprado/lidar-camera-calibration-ros2" target="_blank" rel="noopener">Repo</a>
+            <a href="https://github.com/diogoccprado/lidar-camera-calibration-ros2/blob/main/docs/portfolio_calibration_case_study.md" target="_blank" rel="noopener">Case study</a>
           </p>
         </article>
 

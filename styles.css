@@ -322,6 +322,14 @@ h3 {
   margin: 0.9rem 0;
 }
 
+.media img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 .media-box {
   height: 150px;
   border: 1px solid var(--border);
